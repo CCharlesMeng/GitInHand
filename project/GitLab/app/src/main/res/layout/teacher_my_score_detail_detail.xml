@@ -1,0 +1,114 @@
+<!--suppress ALL -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:theme="@android:style/Theme.NoTitleBar"
+    tools:context=".TeacherHomeworkDetailActivity"
+    android:weightSum="1">
+    <!-- Login progress -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="作业情况"
+                android:textSize="16dp"
+                android:textColor="@color/grayText"
+                android:id="@+id/scoreDetailTitle" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="学生信息"
+                android:textSize="16dp"
+                android:textColor="@color/grayText"
+                android:id="@+id/homeworkNameTitle" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="80dp"
+            android:id="@+id/myScoreDetailDetailListView">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_margin="0dp"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp"
+                android:drawableTop="@drawable/mine_icon"
+                android:text="我的作业"
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:id="@+id/button1"
+                android:layout_weight="0.33" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp"
+                android:drawableTop="@drawable/homework"
+                android:text="老师作业"
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:id="@+id/button2"
+                android:layout_weight="0.34" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp"
+                android:drawableTop="@drawable/marks"
+                android:text="历史成绩"
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:id="@+id/button3"
+                android:layout_weight="0.33" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
